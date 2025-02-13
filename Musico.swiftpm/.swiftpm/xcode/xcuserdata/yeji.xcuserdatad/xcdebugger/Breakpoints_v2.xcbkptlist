@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0F6ECDB1-1532-464C-9DF3-E90F69C62E20"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDB7F26C-B552-4363-ACC2-F5B65A1D4A8F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "View/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68B229D4-8CD5-4C13-8663-9CC0254EC231"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "View/Pianoview.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "68B229D4-8CD5-4C13-8663-9CC0254EC231 - 67f1737e0c27945f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;(image: Swift.String, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat)&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;)&gt; in Musico.PianoView.body.getter : some"
+                  moduleName = "Musico.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeji/Desktop/SSCMusico1/Musico.swiftpm/View/Pianoview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53">
+               </Location>
+               <Location
+                  uuid = "68B229D4-8CD5-4C13-8663-9CC0254EC231 - 3163ca2d8ad04fa5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0)&gt; in closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;(image: Swift.String, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat)&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.offset(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of Musico.PianoView.pianoKey(type: Musico.HapticManager.HapticType, normalImage: Swift.String, pressedImage: Swift.String, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;)&gt; in Musico.PianoView.body.getter : some"
+                  moduleName = "Musico.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeji/Desktop/SSCMusico1/Musico.swiftpm/View/Pianoview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
