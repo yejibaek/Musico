@@ -7,15 +7,15 @@ extension HapticManager.HapticType: Comparable {
         
         guard let lhsIndex = order.firstIndex(of: lhs),
               let rhsIndex = order.firstIndex(of: rhs) else {
-            return false // 비교할 수 없는 경우 false 반환
+            return false
         }
-        
+    
         return lhsIndex < rhsIndex
     }
 }
 
 struct HPianoView: View {
-    @StateObject private var hapticManager = HapticManager()  // HapticManager 인스턴스를 @StateObject로 선언
+    @StateObject private var hapticManager = HapticManager()
     @State private var selectedKeys: Set<HapticManager.HapticType> = []
     @State private var resultText: String = ""
     
@@ -42,11 +42,11 @@ struct HPianoView: View {
                     .offset(x: -60, y: 80)
                     
                     HStack {
-                        pianoKey(type: .CSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: -109, offsetY: 33)
-                        pianoKey(type: .DSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: -86, offsetY: 33)
-                        pianoKey(type: .FSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: 26, offsetY: 33)
-                        pianoKey(type: .GSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: 49, offsetY: 33)
-                        pianoKey(type: .ASharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: 72, offsetY: 33)
+                        pianoKey(type: .CSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: -109, offsetY: 33)
+                        pianoKey(type: .DSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: -86, offsetY: 33)
+                        pianoKey(type: .FSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: 26, offsetY: 33)
+                        pianoKey(type: .GSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: 49, offsetY: 33)
+                        pianoKey(type: .ASharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: 72, offsetY: 33)
                     }
                 }
                 
@@ -73,8 +73,7 @@ struct HPianoView: View {
             selectedKeys.insert(type)
         }
         
-        // 햅틱 반응 추가
-        hapticManager.playHaptic(type: type)  // HapticManager 인스턴스를 통해 햅틱을 실행
+        hapticManager.playHaptic(type: type)
         
         if selectedKeys.count == 3 {
             analyzeChord()
@@ -101,15 +100,15 @@ struct HPianoView: View {
             [.B, .D, .FSharp]  // B minor
         ]
         
-        // 배열로 변환 후 정렬
+      
         let sortedKeys = selectedKeys.sorted()
         
         if majorChords.contains(sortedKeys) {
-            resultText = "✨ 밝고 경쾌한 장조 ✨"
+            resultText = "밝은이미지와 배경"
         } else if minorChords.contains(sortedKeys) {
-            resultText = "🌙 어두운 단조 🌙"
+            resultText = "어두운 이미지와 배경"
         } else {
-            resultText = "⚡ 불협화음 ⚡"
+            resultText = "불협화음"
         }
         
         // 2초 후에 초기화
@@ -119,6 +118,7 @@ struct HPianoView: View {
         }
     }
 }
+
 
 struct HPianoView_Previews: PreviewProvider {
     static var previews: some View {

@@ -20,6 +20,7 @@ struct OnboardingView2: View {
                         .padding(.top, 30)
                         .foregroundColor(.purple)
                 }
+                Text("It was created to help people with hearing impairments get closer to music.")
             }
         }
     }

@@ -14,13 +14,14 @@ struct OnboardingView1: View {
                 LinearGradient(gradient: Gradient(colors: [Color.backgroundTop, Color.backgroundBottom]),
                                startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
-                
+            
                 NavigationLink(destination: OnboardingView2()) {
                     Text("1")
                         .font(.custom("DIN Alternate", size: 32))
                         .padding(.top, 30)
                         .foregroundColor(.purple)
                 }
+                Text("Musico is an app that represents music and connection.")
                 
             }
         }

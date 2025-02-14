@@ -51,11 +51,11 @@ struct PianoView: View {
                 .offset(x:-60,y:80)
                 
                 HStack {
-                    pianoKey(type: .CSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: -109, offsetY: 33)
-                    pianoKey(type: .DSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: -86, offsetY: 33)
-                    pianoKey(type: .FSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: 26, offsetY: 33)
-                    pianoKey(type: .GSharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: 49, offsetY: 33)
-                    pianoKey(type: .ASharp, normalImage: "blackkey", pressedImage: "blackkey2", width: 60, height: 129, offsetX: 72, offsetY: 33)
+                    pianoKey(type: .CSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: -109, offsetY: 33)
+                    pianoKey(type: .DSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: -86, offsetY: 33)
+                    pianoKey(type: .FSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: 26, offsetY: 33)
+                    pianoKey(type: .GSharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: 49, offsetY: 33)
+                    pianoKey(type: .ASharp, normalImage: "blackkey", pressedImage: "black_pressed", width: 60, height: 129, offsetX: 72, offsetY: 33)
                 }
             }
             

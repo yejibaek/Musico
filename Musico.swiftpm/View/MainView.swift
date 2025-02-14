@@ -11,17 +11,17 @@ struct MainView: View {
                     LinearGradient(gradient: Gradient(colors: [Color.backgroundTop, Color.backgroundBottom]),
                                    startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
-        
+                    
                     VStack {
                         Text("Musico")
-                            .font(.custom("DashingUnicorn", size: 96))
+//                            .font(.custom("DashingUnicorn", size: 96))
                         Text("See, Feel and Live the music")
-                            .font(.custom("DashingUnicorn", size: 24))
+//                            .font(.custom("DashingUnicorn", size: 24))
                             .padding(.bottom, 20)
-                        Image("임시Logo")
+//                        Image("MusicoLogo")
                         NavigationLink(destination: OnboardingView1()) {
                             Text("Touch Start!")
-                                .font(.custom("DashingUnicorn", size: 32))
+//                                .font(.custom("DashingUnicorn", size: 32))
                                 .padding(.top, 30)
                                 .foregroundColor(.purple)
                         }
@@ -32,6 +32,7 @@ struct MainView: View {
             }
         }
     }
+}
     struct MainView_Previews: PreviewProvider {
         static var previews: some View {
             MainView()
@@ -39,7 +40,7 @@ struct MainView: View {
         }
     }
     
-}
+
 
 //                            .onAppear {
 //                                            for family: String in UIFont.familyNames {

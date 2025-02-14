@@ -7,27 +7,43 @@
 
 import SwiftUI
 
+
 struct MusicoView: View {
+    
+    
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color.backgroundTop, Color.backgroundBottom]),
-                               startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-                VStack(spacing: 20) {
-                    Text("Melody")
-                    Text("Harmony")
-                    Text("Rhythm")
+        
+        VStack(alignment: .center) {
+            Text("Music is made up of Rhythm, Melody and Harmony!")
+            Text("This is like patterns,color and color harmony in visual art.")
+            ScrollView(.horizontal){
+                HStack {
+                    NavigationLink(destination: RhythmStoryView1()) {
+                        Rectangle()
+                            .frame(width: 250, height:350)
+                            .cornerRadius(20)
+                            .padding(8)
+                    }
+                    NavigationLink(destination: MelodyStoryView1()) {
+                        Rectangle()
+                            .frame(width: 250, height: 350)
+                            .cornerRadius(20)
+                            .padding(8)
+                    }
+                    NavigationLink(destination: HarmonyStoryView1()) {
+                        Rectangle()
+                            .frame(width: 250, height: 350)
+                            .cornerRadius(20)
+                            .padding(8)
+                    }
                 }
             }
+            Text("Experience all of them.")
+            
         }
-    }
-}
-
-
+    }}
 struct MusicoView_Previews: PreviewProvider {
     static var previews: some View {
         MusicoView()
-        
     }
 }

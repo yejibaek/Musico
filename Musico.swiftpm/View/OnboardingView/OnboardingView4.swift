@@ -20,6 +20,7 @@ struct OnboardingView4: View {
                         .padding(.top, 30)
                         .foregroundColor(.purple)
                 }
+                Text("Through Musico, we hope you can see,feel, and get closer to music.")
             }
         }
     }

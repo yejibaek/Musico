@@ -20,6 +20,7 @@ struct OnboardingView3: View {
                         .padding(.top, 30)
                         .foregroundColor(.purple)
                 }
+                Text("Musico expresses music by comparing it to arts and conveys it through vibrations")
             }
         }
     }
