@@ -10,14 +10,16 @@ import CoreHaptics
 import AVFoundation
 
 
+
 struct ContentView: View {
     @State var engine: CHHapticEngine? = nil
     @State var activeHaptic: Bool = false
     
     var body: some View {
             VStack {
-                PianoView(engine: $engine, activeHaptic: $activeHaptic)
-               
+//                HPianoView()
+//                PianoView(engine: $engine, activeHaptic: $activeHaptic)
+              MainView(engine: $engine, activeHaptic: $activeHaptic)
                     .onAppear {
                         for family: String in UIFont.familyNames {
                             print(family)
@@ -26,6 +28,8 @@ struct ContentView: View {
                             }
                         }
                     }
+//                RhythmView()
+                  
             }
     }
 }

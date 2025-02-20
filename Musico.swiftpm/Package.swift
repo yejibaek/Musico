@@ -37,8 +37,13 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "AppModule",
-            path: "."
+            path: ".",
+            resources: [
+                .process("Resources/Dashing Unicorn.ttf"),
+                .process("Resources/LeeSeoyun.ttf")
+                
+            ]
         )
     ],
-    swiftLanguageVersions: [.v6]
+    swiftLanguageVersions: [.version("6")]
 )

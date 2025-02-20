@@ -93,7 +93,7 @@ class HapticManager: ObservableObject {
                     CHHapticEventParameter(parameterID: .hapticIntensity, value: 1.3),
                     CHHapticEventParameter(parameterID: .hapticSharpness, value: sharpness)
                 ],
-                relativeTime: 0, duration: 1.0 // ✅ 햅틱 지속 시간을 줄여서 반응성 개선
+                relativeTime: 0, duration: 0.5 // ✅ 햅틱 지속 시간을 줄여서 반응성 개선
             )
         }
         
@@ -115,36 +115,41 @@ class HapticManager: ObservableObject {
         }
         func imageName() -> String {
             switch self {
-            case .C: return "Ckeypic"
-            case .CSharp: return "CSharpkeyImage"
-            case .D: return "Dkeypic"
-            case .DSharp: return "DSharpkeyImage"
-            case .E: return "Ekeypic"
-            case .F: return "Fkeypic"
-            case .FSharp: return "FImage"
-            case .G: return "Gkeypic"
-            case .GSharp: return "GSharpkeyImage"
-            case .A: return "Akeypic"
-            case .ASharp: return "ASharpkeyImage"
-            case .B: return "Bkeypic"
+            case .C: return "Cfloor"
+            case .CSharp: return "C#floor"
+            case .D: return "Dfloor"
+            case .DSharp: return "D#floor"
+            case .E: return "Efloor"
+            case .F: return "Ffloor"
+            case .FSharp: return "F#floor"
+            case .G: return "Gfloor"
+            case .GSharp: return "G#floor"
+            case .A: return "Afloor"
+            case .ASharp: return "A#floor"
+            case .B: return "Bfloor"
             }
         }
-        func imageOffset() -> (x: CGFloat, y: CGFloat) {
+        func imageOffset(screenWidth: CGFloat, screenHeight: CGFloat) -> (x: CGFloat, y: CGFloat) {
+            let baseX = screenWidth * 0.27 // 화면 너비에 비례한 x 위치
+            let baseY = screenHeight * 0.01  // 화면 높이에 비례한 y 위치 (조정 가능)
+            
             switch self {
-            case .C: return (-290, -60)
-            case .CSharp: return (-150, -70)
-            case .D: return (-200, -70)
-            case .DSharp: return (-50, -180)
-            case .E: return (-110, -80)
-            case .F: return (-20, -90)
-            case .FSharp: return (100, -120)
-            case .G: return (70, -100)
-            case .GSharp: return (200, -140)
-            case .A: return (160, -110)
-            case .ASharp: return (300, -160)
-            case .B: return (250, -120)
+            case .C: return (-baseX , baseY * -0.1)  // baseY를 사용하여 y 좌표 동적으로 조정
+            case .CSharp: return (-baseX , baseY * -0.1)
+            case .D: return (-baseX * 0.7, baseY * -1.6)
+            case .DSharp: return (-baseX * 0.7, baseY * -1.6)
+            case .E: return (-baseX * 0.4, baseY * -3.2)
+            case .F: return (-baseX * 0.1, baseY * -4.4)
+            case .FSharp: return (-baseX * 0.1, baseY * -4.4)
+            case .G: return (baseX * 0.28, baseY * -5.6)
+            case .GSharp: return (baseX * 0.28, baseY * -5.6)
+            case .A: return (baseX * 0.6, baseY * -6.8)
+            case .ASharp: return (baseX * 0.6, baseY * -6.8)
+            case .B: return (baseX * 0.9, baseY * -8.5)
             }
         }
+
+
         
         func normalImageName() -> String {
             return imageName()
